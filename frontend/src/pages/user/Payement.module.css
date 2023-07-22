@@ -1,0 +1,31 @@
+.payement{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payement form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    box-shadow: 0 0 10px grey;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 20px;
+   
+}
+.orderConfirmation{
+    background-color: aqua;
+    color: red;
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 20px;
+}

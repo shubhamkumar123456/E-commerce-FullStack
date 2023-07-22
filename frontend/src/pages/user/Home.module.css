@@ -1,0 +1,11 @@
+.products{
+    display: grid;
+    grid-template-columns: repeat(4,350px);
+    margin: 2rem 0;
+    margin-left: 5rem;
+
+    
+}
+.productContainer{
+    margin-bottom: 1rem;
+}

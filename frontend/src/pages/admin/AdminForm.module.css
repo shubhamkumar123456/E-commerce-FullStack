@@ -1,0 +1,35 @@
+.adminForm{
+
+}
+.adminForm form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 1rem;
+    margin: auto;
+    text-align: left;
+    /* border: 1px solid grey; */
+    box-shadow: 0 0 10px grey;
+    border-radius: 30px;
+    margin-top: 1rem;
+}
+.adminForm form input{
+    margin-bottom: 5px;;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(4,350px);
+    margin: 2rem 0;
+    margin-left: 5rem;
+
+    
+}
+.productContainer{
+    margin-bottom: 1rem;
+}
+.updateForm{
+    position: absolute;
+    top:36rem;
+    left:30rem;
+    background-color: aliceblue;
+}

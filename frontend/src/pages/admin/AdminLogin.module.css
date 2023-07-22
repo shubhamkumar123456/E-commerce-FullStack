@@ -1,0 +1,19 @@
+.adminlogin{
+
+}
+
+.adminlogin form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: start;
+    border: 1px solid grey;
+    box-shadow: 0 0 10px grey;
+    border-radius: 20px;
+}
+.adminlogin form button{
+    margin: 1rem 0;;
+}
