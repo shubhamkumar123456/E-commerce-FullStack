@@ -12,7 +12,7 @@ const History = () => {
     const [allItem, setallItem] = useState([]);
     useEffect(()=>{
       const fetchData=async()=>{
-        const response=await fetch('http://localhost:4000/api/history',{
+        const response=await fetch('https://e-commerce-full-stack-livid.vercel.app/api/history',{
           method:"POST",
           headers:{
             'content-type': 'application/json'

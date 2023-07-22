@@ -21,7 +21,7 @@ const Cart = () => {
 
     const handlePlus=async(items)=>{
        
-        const response=await fetch(`http://localhost:4000/api/cart/icrement/${items._id}`,{
+        const response=await fetch(`https://e-commerce-full-stack-livid.vercel.app/api/cart/icrement/${items._id}`,{
             method:'PUT',
             headers:{
                 'content-type': 'application/json'
@@ -34,7 +34,7 @@ const Cart = () => {
     }
  
     const handleMinus=async(items)=>{
-        const response=await fetch(`http://localhost:4000/api/cart/decrement/${items._id}`,{
+        const response=await fetch(`https://e-commerce-full-stack-livid.vercel.app/api/cart/decrement/${items._id}`,{
             method:'PUT',
             headers:{
                 'content-type': 'application/json'

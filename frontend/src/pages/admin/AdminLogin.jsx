@@ -10,7 +10,7 @@ const AdminLogin = () => {
     const handleSubmit=async(e)=>{
         e.preventDefault();
         try {
-          const response=await fetch('http://localhost:4000/api',{
+          const response=await fetch('https://e-commerce-full-stack-livid.vercel.app/api',{
             method: 'POST',
             headers:{
                 'content-type': 'application/json'

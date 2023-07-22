@@ -34,7 +34,7 @@ const [clicked, setclicked] = useState(false);
           
         }
         console.log(obj)
-        const response=await fetch('http://localhost:4000/api/payement',{
+        const response=await fetch('https://e-commerce-full-stack-livid.vercel.app/api/payement',{
           method:"POST",
           headers:{
             'content-type': 'application/json'

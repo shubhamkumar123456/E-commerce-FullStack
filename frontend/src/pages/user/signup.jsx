@@ -18,7 +18,7 @@ const signup = () => {
             cpassword:cpasswordRef.current.value,
         }
         console.log(obj);
-        const response=await fetch('http://localhost:4000/api/users/signup',{
+        const response=await fetch('https://e-commerce-full-stack-livid.vercel.app/api/users/signup',{
             method: 'POST',
             headers:{
                 'content-type': 'application/json'

@@ -11,7 +11,7 @@ const Home = () => {
 
     useEffect(()=>{
         const fetchData=async()=>{
-            const response=await fetch('http://localhost:4000/api/posts/');
+            const response=await fetch('https://e-commerce-full-stack-livid.vercel.app/api/posts/');
             const result=await response.json();
             // console.log(result.post);
             setproducts(result.post)
@@ -23,7 +23,7 @@ const Home = () => {
 const handleClick=async(item)=>{
     // console.log(item)
     ctx.addToCart(item)
-    const response=await fetch('http://localhost:4000/api/cart/add',{
+    const response=await fetch('https://e-commerce-full-stack-livid.vercel.app/api/cart/add',{
       method:'POST',
       headers:{
         'content-type': 'application/json'

@@ -26,7 +26,7 @@ const AdminForm = () => {
             img: imgRef.current.value
         }
         console.log(obj)
-        const response = await fetch('http://localhost:4000/api/posts/createPost', {
+        const response = await fetch('https://e-commerce-full-stack-livid.vercel.app/api/posts/createPost', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -47,7 +47,7 @@ const AdminForm = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('http://localhost:4000/api/posts/');
+            const response = await fetch('https://e-commerce-full-stack-livid.vercel.app/api/posts/');
             const data = await response.json();
             console.log(data.post);
             setitems(data.post);
@@ -59,7 +59,7 @@ const AdminForm = () => {
     const handleDelete = async (id) => {
 
         console.log(id)
-        const response = await fetch(`http://localhost:4000/api/posts/delete/${id}`, {
+        const response = await fetch(`https://e-commerce-full-stack-livid.vercel.app/api/posts/delete/${id}`, {
             method: 'DELETE',
             headers: {
                 'content-type': 'application/json'
@@ -71,7 +71,7 @@ const AdminForm = () => {
     }
     const handleUpdate = async (e) => {
         e.preventDefault();
-        const response = await fetch(`http://localhost:4000/api/posts/update/${id}`, {
+        const response = await fetch(`https://e-commerce-full-stack-livid.vercel.app/api/posts/update/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

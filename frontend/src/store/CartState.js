@@ -28,7 +28,7 @@ useEffect(()=>{
   const deleteToCart = async(Itemid) => {
     console.log(Itemid);
     const filter = item.filter((items) => items._id != Itemid);
-    const response=await fetch(`http://localhost:4000/api/cart/delCart/${Itemid}`,{
+    const response=await fetch(`https://e-commerce-full-stack-livid.vercel.app/api/cart/delCart/${Itemid}`,{
       method: 'DELETE',
       headers:{
         'content-type': 'application/json'
@@ -63,7 +63,7 @@ useEffect(()=>{
   };
 
   const getCart = async () => {
-    const response = await fetch("http://localhost:4000/api/cart/", {
+    const response = await fetch("https://e-commerce-full-stack-livid.vercel.app/api/cart/", {
       method: "POST",
       headers: {
         "content-type": "application/json",

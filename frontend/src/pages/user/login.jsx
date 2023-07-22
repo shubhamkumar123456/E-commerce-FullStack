@@ -18,7 +18,7 @@ const login = () => {
        
         }
         console.log(obj);
-        const response=await fetch('http://localhost:4000/api/users/login',{
+        const response=await fetch('https://e-commerce-full-stack-livid.vercel.app/api/users/login',{
             method: 'POST',
             headers:{
                 'content-type': 'application/json'
