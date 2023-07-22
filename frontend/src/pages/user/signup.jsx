@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import Classes from './Signup.module.css'
 import { Link, useNavigate } from 'react-router-dom';
 
-const signup = () => {
+const Signup = () => {
   const navigate=useNavigate()
     const nameRef=useRef();
     const emailRef = useRef();
@@ -48,4 +48,4 @@ const signup = () => {
   )
 }
 
-export default signup
+export default Signup

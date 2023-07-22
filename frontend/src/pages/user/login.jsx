@@ -3,7 +3,7 @@ import Classes from './Login.module.css'
 import { Link, useNavigate } from 'react-router-dom';
 import CartContext from '../../store/CartContext';
 
-const login = () => {
+const Login = () => {
   const navigate=useNavigate();
     const emailRef=useRef();
     const passwordRef = useRef();
@@ -53,4 +53,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Login
